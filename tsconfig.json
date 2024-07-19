@@ -1,0 +1,42 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    // 使用 ES Module 的类字段语法
+    "composite": true,
+    "target": "ESNext",
+    "lib": ["esnext", "dom"], // 将代码编译为最新版本的 JS
+    "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "paths": {
+      "@/*": ["./src/*"],
+      "/#/*": ["types/*"]
+    },
+    "resolveJsonModule": true,
+    "types": ["@dcloudio/types"],
+    "allowJs": true, // 不输出文件,即编译后不会生成任何js文件
+    "noImplicitThis": true, // 要求所有文件都是 ES Module 模块。
+    "noEmit": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "vueCompilerOptions": {
+    "target": 3,
+    "nativeTags": ["block", "template", "component", "slot"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "build/**/*.ts",
+    "build/**/*.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

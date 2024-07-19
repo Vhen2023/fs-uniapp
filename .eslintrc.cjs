@@ -1,7 +1,7 @@
 /*
  * @Author: vhen
  * @Date: 2024-07-19 12:20:52
- * @LastEditTime: 2024-07-19 14:03:58
+ * @LastEditTime: 2024-07-20 00:09:15
  * @Description: 现在的努力是为了小时候吹过的牛逼！
  * @FilePath: \fs-uniapp\.eslintrc.cjs
  *
@@ -44,6 +44,7 @@ module.exports = {
     // 开启 prettier 自动修复的功能
     'prettier/prettier': 'error',
     'import/no-unresolved': 'off',
+    semi: 'off',
     // 对后缀的检测，否则 import 一个ts文件也会报错，需要手动添加'.ts', 增加了下面的配置后就不用了
     'import/extensions': ['error', 'ignorePackages', { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }],
     // 只允许1个默认导出，关闭，否则不能随意export xxx

@@ -40,7 +40,7 @@
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
     "type-check": "vue-tsc --noEmit",
     "lint:fix": "eslint . --fix",
-    "prepare": "git init && husky install ",
+    "prepare": "husky install",
     "cz": "czg"
   },
   "dependencies": {
@@ -59,6 +59,7 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-4010520240507001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4010520240507001",
     "dayjs": "^1.11.11",
+    "luch-request": "^3.1.1",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
     "vue": "^3.4.21",
@@ -90,7 +91,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.27.0",
-    "husky": "^9.1.1",
+    "husky": "^8.0.3",
     "lint-staged": "^15.2.7",
     "postcss": "^8.4.39",
     "postcss-html": "^1.7.0",

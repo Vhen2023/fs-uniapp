@@ -1,24 +1,17 @@
 <script setup lang="ts">
-import { useUserStore } from '@/store/user'
-const { setUserInfo, userInfo } = useUserStore()
-setUserInfo({
-  nickname: 'vhen',
-  avatar: ' https://avatars.githubusercontent.com/u/26346807?v=4',
-})
-console.log(userInfo)
-const title = ref('Hello')
+import { userPosts } from '@/apis/posts'
+const posts = ref([])
+const getUserPosts = async () => {
+  const res: any = await userPosts(1)
+  posts.value = res
+}
+getUserPosts()
 </script>
 
 <template>
   <view class="content flex flex-col items-center justify-center">
     <image class="logo" src="/static/logo.png" />
-    <view class="text-area">
-      <text class="title">
-        {{ title }}
-      </text>
-    </view>
-
-    <view class="unocss fs-flex-center">unocss</view>
+    <view class="title" v-for="(item, index) of posts" :key="index">{{ item.title }}</view>
   </view>
 </template>
 
@@ -38,7 +31,10 @@ const title = ref('Hello')
 }
 
 .title {
+  width: 100%;
+  padding: 20rpx;
   font-size: 36rpx;
   color: #8f8f94;
+  text-align: left;
 }
 </style>

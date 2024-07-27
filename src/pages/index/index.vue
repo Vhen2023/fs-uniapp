@@ -6,11 +6,18 @@ const getUserPosts = async () => {
   posts.value = res
 }
 getUserPosts()
+
+const to = () => {
+  uni.navigateTo({
+    url: '/pagesA/test/index',
+  })
+}
 </script>
 
 <template>
   <view class="content flex flex-col items-center justify-center">
     <image class="logo" src="/static/logo.png" />
+    <button @click="to">test</button>
     <view class="title" v-for="(item, index) of posts" :key="index">{{ item.title }}</view>
   </view>
 </template>

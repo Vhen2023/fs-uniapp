@@ -1,7 +1,7 @@
 /*
  * @Author: vhen
  * @Date: 2024-07-19 23:01:49
- * @LastEditTime: 2024-07-19 23:02:17
+ * @LastEditTime: 2024-07-20 00:47:37
  * @Description: 现在的努力是为了小时候吹过的牛逼！
  * @FilePath: \fs-uniapp\src\http\checkStatus.ts
  *

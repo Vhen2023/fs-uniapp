@@ -1,13 +1,13 @@
 /*
  * @Author: vhen
  * @Date: 2024-07-19 20:56:20
- * @LastEditTime: 2024-07-20 16:03:33
+ * @LastEditTime: 2024-07-28 14:16:42
  * @Description: 现在的努力是为了小时候吹过的牛逼！
  * @FilePath: \fs-uniapp\src\http\index.ts
  *
  */
 import { handleAuthError, handleNetworkError } from '@/http/checkStatus'
-import type { ResultData } from '@/types/app'
+import type { ResultData } from '../../../#/app'
 import Request, { type HttpRequestConfig } from 'luch-request'
 
 const createRequest = (options = {}) => {

@@ -6,6 +6,9 @@
  * @FilePath: \fs-uniapp\src\types\app.d.ts
  *
  */
+
+export type LocaleType = 'zh' | 'en'
+
 export interface Result {
   code: number
   message: string

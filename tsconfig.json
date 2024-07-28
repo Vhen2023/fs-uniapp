@@ -11,7 +11,7 @@
     "moduleResolution": "Node",
     "paths": {
       "@/*": ["./src/*"],
-      "/#/*": ["types/*"]
+      "/#/*": ["./src/types/*"]
     },
     "resolveJsonModule": true,
     "types": ["@dcloudio/types"],
